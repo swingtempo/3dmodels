@@ -100,10 +100,12 @@ module knobs() {
             cylinder(d=knob_diam, h=knob_len + knob_insertion_length_into_leg, center=true);
 }
 
-union() {
-    handle_body();
-    knobs();
-}
+// translate([0, 0, depth / 2]) 
+//     rotate([90, 0, 0])
+        union() {
+            handle_body();
+            knobs();
+        }
 
 // ---- Notes for strength (PLA) ----
 // Suggested print settings (starting point):
