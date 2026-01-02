@@ -10,7 +10,7 @@ square_size = 256; // source heightmap size in pixels (assumed square)
 
 img_file = str("./Microsoft_Loop_mask_contrast_", square_size, "x", square_size, ".png"); // preprocessed mask+height
 max_xy_mm = 60; // longest XY dimension
-max_height_mm = 10; // peak height (tune 10–16 mm as desired)
+max_height_mm = 5; // peak height (tune 10–16 mm as desired)
 base_clip_mm = 0.5; // ensures perfectly flat base
 round_mm = 0.8; // optional top rounding via minkowski
 epsilon_mm = 0.01;
