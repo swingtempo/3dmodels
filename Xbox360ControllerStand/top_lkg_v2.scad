@@ -14,9 +14,9 @@
 //   arm_gap = 31.750000;
 
 
-pair_spacing = 54.750000;   // X spacing between tower *pairs* (right-edge to right-edge)
-tower_width  = 8.860001;    // X width of a tower (main body width at the base)
-tower_length = [14, 14]; // [front, back] Y length of each tower
+pair_spacing = 64.750000;   // X spacing between tower *pairs* (right-edge to right-edge)
+tower_width  = 10.860001;    // X width of a tower (main body width at the base)
+tower_length = [8, 8]; // [front, back] Y length of each tower
 tower_height = 74.577000;   // Overall Z height of a tower (from z=9.75 to the top)
 
 width   = 252.997994;
@@ -134,7 +134,7 @@ module tower_pair(x_right) {
 //
 // To remove/reorder/repeat sections, edit these:
 section_sequence = [0,1,2,3,4];           // templates per slot: 0=base-only, 1=rightmost towers, ..., 4=leftmost towers
-section_show     = [true,true,true,true,true]; // per-slot visibility (same length as section_sequence)
+section_show     = [true,true,true,true,false]; // per-slot visibility (same length as section_sequence)
 
 _section_centers = [-73.682014, -18.932015, 35.817985, 90.567986];
 _section_pitch_orig = 54.750000;
