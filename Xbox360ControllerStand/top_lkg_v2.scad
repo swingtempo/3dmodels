@@ -18,6 +18,8 @@ pair_spacing = 64.750000;   // X spacing between tower *pairs* (right-edge to ri
 tower_width  = 10.860001;    // X width of a tower (main body width at the base)
 tower_length = 8; // Y length of a tower
 tower_height = 74.577000;   // Overall Z height of a tower (from z=9.75 to the top)
+tower_y_offset = 4.55;
+
 
 width   = 252.997994;
 length  = 59.644998;
@@ -113,7 +115,7 @@ module tower_scaled(x_right, y0, y_len_orig, y_len_target) {
   sy = y_len_target / y_len_orig;
   sz = tower_height / _tower_h_orig;
 
-  translate([x_right, y0, _tower_z0_orig])
+  translate([x_right, tower_y_offset + y0, _tower_z0_orig])
     scale([sx, sy, sz])
       translate([-x_right, -y0, -_tower_z0_orig])
         _tower_raw(x_right, y0, y_len_orig);
