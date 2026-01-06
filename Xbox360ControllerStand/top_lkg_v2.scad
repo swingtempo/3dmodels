@@ -16,7 +16,7 @@
 
 pair_spacing = 64.750000;   // X spacing between tower *pairs* (right-edge to right-edge)
 tower_width  = 10.860001;    // X width of a tower (main body width at the base)
-tower_length = [8, 8]; // [front, back] Y length of each tower
+tower_length = 8; // Y length of a tower
 tower_height = 74.577000;   // Overall Z height of a tower (from z=9.75 to the top)
 
 width   = 252.997994;
@@ -120,10 +120,8 @@ module tower_scaled(x_right, y0, y_len_orig, y_len_target) {
 }
 
 module tower_pair(x_right) {
-  // Front tower (uses tower_length[0])
-  tower_scaled(x_right, _tower_front_y0_orig, _tower_front_len_orig, tower_length[0]);
-  // Back tower (uses tower_length[1])
-  tower_scaled(x_right, _tower_back_y0_orig,  _tower_back_len_orig,  tower_length[1]);
+  tower_scaled(x_right, _tower_front_y0_orig, _tower_front_len_orig, tower_length);
+  tower_scaled(x_right, _tower_back_y0_orig,  _tower_back_len_orig,  tower_length);
 }
 
 
