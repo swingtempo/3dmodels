@@ -17,7 +17,7 @@
 pair_spacing = 64.750000;   // X spacing between tower *pairs* (right-edge to right-edge)
 tower_width  = 10.860001;    // X width of a tower (main body width at the base)
 tower_length = 8; // Y length of a tower
-tower_height = 74.577000;   // Overall Z height of a tower (from z=9.75 to the top)
+tower_height = 84.577000;   // Overall Z height of a tower (from z=9.75 to the top)
 tower_y_offset = 4.55;
 
 
