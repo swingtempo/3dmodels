@@ -13,7 +13,7 @@ base_gap_hole_centers = 45.0;          // original (tower1 hole center Y - tower
 orig_hole_edge_spacing = base_gap_hole_centers - hole_dims[1];
 
 // user-facing parameter (inner-edge-to-inner-edge spacing)
-tower_spacing = 40;//orig_hole_edge_spacing;
+tower_spacing = 38;//orig_hole_edge_spacing;
 
 base_boxes = [
   [-55, -82.5, 0, 112.5, 77.5, 2.5],
