@@ -11,7 +11,7 @@ module lower_edge(width = 152.4) {
 
   block_width = width; // X (6 inches) 
   block_depth = 140; // Y (14 cm)
-  block_height = 55.2;
+  block_height = 35.2;
 
   hole_x = block_width + 2;
   hole_y = 118;

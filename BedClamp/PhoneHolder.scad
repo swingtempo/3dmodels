@@ -24,7 +24,7 @@ thumb_cutout_height = 0.6 * phone_thick; // in Z
 
 // ---- Derived ----
 //inner_x = phone_width + 2 * clearance_xy;
-inner_y = phone_length + 2 * clearance_xy;
+inner_y = phone_length + 20 * clearance_xy;
 inner_z = phone_thick + clearance_z;
 
 outer_x = 140; // inner_x + 2 * wall_thickness;
@@ -77,7 +77,7 @@ $fn = 64;
 
 // Show container
 container();
-//phone_dummy();
+phone_dummy();
 
 rotate([0, 0, 90])
-  translate([0, 0, -20]) lower_edge(width=outer_y);
+  translate([0, 0, -10]) lower_edge(width=outer_y);
