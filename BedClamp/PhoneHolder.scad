@@ -1,4 +1,6 @@
 use <BedClamp.scad>
+
+// leverages https://github.com/reiver/scad-box
 use <../../scad-box/use.scad>
 
 //
