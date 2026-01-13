@@ -77,7 +77,7 @@ $fn = 64;
 
 // Show container
 container();
-phone_dummy();
+// phone_dummy();
 
 rotate([0, 0, 90])
   translate([0, 0, -10]) lower_edge(width=outer_y);
