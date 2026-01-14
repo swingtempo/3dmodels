@@ -11,11 +11,11 @@ module lower_edge(width = 152.4) {
 
   block_width = width; // X (6 inches) 
   block_depth = 140; // Y (14 cm)
-  block_height = 35.2;
+  block_height = 38.2;
 
   hole_x = block_width + 2;
   hole_y = 120;
-  hole_z = 24;
+  hole_z = 27;
 
   fnValue = 50;
 
@@ -30,7 +30,7 @@ module lower_edge(width = 152.4) {
     cube([hole_x, hole_y, hole_z], center=true);
 
     // Extend cutout downward to ensure through-cut
-    z_translate = 30;
+    z_translate = 20;
     translate([0, 0, -z_translate])
       // Centered cutout
       cube([hole_x, hole_y - 25.4, hole_z + z_translate], center=true);

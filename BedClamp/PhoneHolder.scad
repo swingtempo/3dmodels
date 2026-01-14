@@ -49,21 +49,6 @@ module container() {
     // remove a wall
     translate([-inner_x / 2, 0, floor_thick])
       cube([inner_x, inner_y, inner_z + extra_wall_z + 0.1], center=false);
-
-    // Thumb cutout
-    if (add_thumb_cutout) {
-      translate(
-        [
-          -inner_x / 2,
-          -inner_y / 2 - 0.2, // extend slightly outside
-          floor_thick,
-        ]
-      )
-        cube(
-          [inner_x, thumb_cutout_depth, thumb_cutout_height],
-          center=false
-        );
-    }
   }
 }
 
@@ -82,4 +67,4 @@ container();
 // phone_dummy();
 
 rotate([0, 0, 90])
-  translate([0, 0, -10]) lower_edge(width=outer_y);
+  translate([0, 0, -14]) lower_edge(width=outer_y);
