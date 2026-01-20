@@ -59,6 +59,14 @@ module phone_dummy() {
       cube([phone_width, phone_length, phone_thick], center=false);
 }
 
+module side_wall() {
+  wall_x = inner_x - 4;
+  wall_y = wall_thickness;
+  wall_z = inner_z;
+
+  cube([wall_x, wall_y, wall_z], center=false);
+}
+
 // ---- Preview ----
 $fn = 64;
 
