@@ -60,7 +60,7 @@ module phone_dummy() {
 }
 
 module side_wall() {
-  wall_x = inner_x - 4;
+  wall_x = inner_x - 0.5;
   wall_y = wall_thickness;
   wall_z = inner_z;
 
